@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #1b1602;
+  text-align: center;
+}
+/* .logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 5px;
+} */
+.üst img {
+  display: flex;
+  margin-left: 20px;
+  width: 100px;
+  height: 100px;
+}
+.üst {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.başlangıç-yan {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  gap: 5px;
+}
+
+.başlangıç-yan li {
+  list-style: none;
+  margin-left: 120px;
+  color: gold;
+}
+.başlangıç-yan p {
+  margin-top: 20px;
+  color: white;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.başlangıç-yan a {
+  color: white;
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-right: 35px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.üst {
+  background-color: white;
+  position: sticky;
+  overflow: hidden;
+  /* top: 0; */
+  text-align: center;
+  margin-top: 30px;
+}
+.üst a {
+  color: gray;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 20px;
+}
+.üst a::after {
+  content: "|"; /* Çizgi eklemek için "|" karakterini kullanabilirsiniz */
+  margin-left: 40px; /* Çizgi ve metin arasındaki boşluk */
+}
+.üst a:hover {
+  background-color: gainsboro;
+  transition: 0.7s;
+}
+.resim {
+  margin-top: 50px;
+  text-align: center;
+}
+img {
+  width: 1400px;
+  height: 500px;
+  object-fit: cover;
+}
+.resim {
+  position: center;
+  width: 300px; /* Resim ve metin kutusunun genişliğini ayarlayın */
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 680px;
+  color: #373131; /* Metin rengi */
+  padding: 5px;
+  font-size: 30px;
+  background: rgba(0, 0, 0, 0.1);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* border-radius: 50%; */
+}
+.image-button {
+  position: absolute;
+  top: 50%; /* Düğmeyi dikey olarak ortala */
+  left: 50%; /* Düğmeyi yatay olarak ortala */
+  transform: translate(-50%, -50%); /* Düğmeyi merkeze taşı */
+  background: gold; /* Düğme arka plan rengi */
+  color: black; /* Düğme metin rengi */
+  padding: 10px 20px; /* Düğme içi içerik boşluğu */
+  border: none;
+  cursor: pointer;
+  margin-top: 80px;
+  border-radius: 25px 25px 25px 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.image-button:hover {
+  background-color: gray;
+  transition: 0.7s;
+}
+
+.orta h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.orta-çizgi {
+  position: center;
+  width: 20%; /* Metin genişliği kadar çizgi uzunluğu */
+  border-bottom: 2px solid gold; /* Çizgi özellikleri */
+  margin-left: 535px;
+  margin-top: 10px;
+}
+.örnekler img {
+  width: 600px;
+  height: 300px;
+  margin-left: 45px;
+  margin-top: 50px;
+}
+.orta h1 {
+  color: black;
+  animation-name: renklendir;
+  /* ne kadar sürcek duration */
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  /* infinit sınırsız çalışsın */
+  animation-iteration-count: infinite;
+  /* sonsuz döngüde kullan */
+  animation-direction: alternate;
+  text-shadow: 5px 3px 30px gray;
+}
+@keyframes renklendir {
+  from {
+    color: gray;
+  }
+  to {
+    color: black;
+  }
+}
+
+.örnek-button {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  background: gold; /* Düğme arka plan rengi */
+  color: black; /* Düğme metin rengi */
+  padding: 10px 20px; /* Düğme içi içerik boşluğu */
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 25px 25px 25px 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.örnek-button:hover {
+  background-color: gray;
+  transition: 0.7s;
+}
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.sol-footer {
+  width: 250px;
+  height: 200px;
+  margin-top: 50px;
+}
+.sağ-list {
+  display: flex;
+  gap: 200px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.sağ-list li {
+  list-style-type: none;
+}
+
+.cizgi {
+  height: 100px;
+  width: 5px;
+  border: 1px solid black;
+  background-color: black;
+}
+
+.sağ-list {
+  color: black;
+  animation-name: renklendir;
+  /* ne kadar sürcek duration */
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  /* infinit sınırsız çalışsın */
+  animation-iteration-count: infinite;
+  /* sonsuz döngüde kullan */
+  animation-direction: alternate;
+  text-shadow: 5px 3px 10px black;
+}
+@keyframes renklendir {
+  from {
+    color: white;
+  }
+  to {
+    color: black;
+  }
+}
+.örnekler {
+  background-color: whitesmoke;
+}
+hr {
+  border: 1px solid gold;
+}
+/* mutfak başlangıç */
+.mutfak {
+  margin-top: 50px;
+  margin-left: 30px;
+  color: gray;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.mutfak-çizgi {
+  width: 15%; /* Metin genişliği kadar çizgi uzunluğu */
+  border-bottom: 2px solid gold; /* Çizgi özellikleri */
+  margin-top: 10px;
+  margin-left: 27px;
+}
+/* yatak başlangıç */
+.yatak {
+  margin-top: 50px;
+  margin-left: 30px;
+  color: gray;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.yatak-çizgi {
+  width: 15%; /* Metin genişliği kadar çizgi uzunluğu */
+  border-bottom: 2px solid gold; /* Çizgi özellikleri */
+  margin-top: 10px;
+  margin-left: 15px;
+}
+/* portmanto başlangıç */
+.portmanto {
+  margin-top: 50px;
+  margin-left: 30px;
+  color: gray;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.portmanto-çizgi {
+  width: 20%; /* Metin genişliği kadar çizgi uzunluğu */
+  border-bottom: 2px solid gold; /* Çizgi özellikleri */
+  margin-top: 10px;
+  margin-left: 17px;
+}
+/* iletişim sayfası başlangıç */
+.iletişim-çizgi {
+  width: 50%; /* Metin genişliği kadar çizgi uzunluğu */
+  border-bottom: 2px solid gold; /* Çizgi özellikleri */
+  margin-top: 10px;
+  margin-left: 100px;
+}
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 100px;
+  margin-left: 500px;
+  background-color: whitesmoke;
+  text-align: center;
+}
+.form-control {
+  border: none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+#submit {
+  background-color: gold;
+  width: 100px;
+  height: 50px;
+  border-radius: 20px 15px 15px 20px;
+}
+#submit:hover {
+  background-color: gray;
+  transition: 0.7s;
+}
+.container h2 {
+  font-size: 40px;
+}
